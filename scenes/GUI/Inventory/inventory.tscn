@@ -1,22 +1,76 @@
-[gd_scene load_steps=2 format=3 uid="uid://brqg8faokjlj4"]
+[gd_scene load_steps=3 format=3 uid="uid://brqg8faokjlj4"]
 
 [ext_resource type="Script" path="res://scripts/Global/GUI/Inventory/inventory_main.gd" id="1_rqy1l"]
+[ext_resource type="Script" path="res://scripts/Global/GUI/Inventory/inventory_slot.gd" id="2_1cftr"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1037.0
-offset_bottom = -494.0
+offset_right = 4.0
+offset_bottom = -220.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rqy1l")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 633.0
-offset_top = 320.0
-offset_right = 929.0
-offset_bottom = 552.0
+offset_left = 257.0
+offset_top = 60.0
+offset_right = 603.0
+offset_bottom = 303.0
 columns = 8
+
+[node name="Head_Slot" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 168.0
+offset_bottom = 104.0
+script = ExtResource("2_1cftr")
+type = 2
+
+[node name="RightHand_Slot" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 128.0
+offset_right = 104.0
+offset_bottom = 168.0
+script = ExtResource("2_1cftr")
+
+[node name="LeftHand_Slot" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 128.0
+offset_right = 232.0
+offset_bottom = 168.0
+script = ExtResource("2_1cftr")
+type = 1
+
+[node name="Torso_Slot" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 168.0
+offset_bottom = 168.0
+script = ExtResource("2_1cftr")
+type = 2
+
+[node name="Boots_Slot" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 168.0
+offset_bottom = 296.0
+script = ExtResource("2_1cftr")
+type = 2
+
+[node name="Pants_Slot" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 168.0
+offset_bottom = 232.0
+script = ExtResource("2_1cftr")
+type = 2

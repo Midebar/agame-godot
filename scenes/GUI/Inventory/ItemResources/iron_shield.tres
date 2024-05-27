@@ -5,10 +5,11 @@
 
 [resource]
 script = ExtResource("2_ttqgy")
-type = 0
+type = 1
 item_name = ""
 item_dmg = 0
 item_def = 4
+item_healing = 0
 item_stackable = false
 count = 0
 item_texture = ExtResource("1_wk6s6")
