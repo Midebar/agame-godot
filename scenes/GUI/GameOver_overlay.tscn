@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://mqdrur4rw03r"]
+
+[ext_resource type="Script" path="res://scripts/Global/GameOver_overlay.gd" id="1_ay3he"]
+[ext_resource type="FontFile" uid="uid://b8irl6rnx5kgp" path="res://addons/merchant-copy/Merchant Copy Doublesize.ttf" id="1_cny5n"]
+
+[node name="GameOver_overlay" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_ay3he")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -5.0
+offset_top = 1.0
+offset_right = 1153.0
+offset_bottom = 662.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 1120.0
+offset_bottom = 639.0
+theme_override_font_sizes/font_size = 60
+text = "You Are Dead"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Retry" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 477.0
+offset_right = 777.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("1_cny5n")
+theme_override_font_sizes/font_size = 30
+text = "Retry"
+
+[connection signal="pressed" from="Panel/Retry" to="." method="_on_retry_pressed"]
