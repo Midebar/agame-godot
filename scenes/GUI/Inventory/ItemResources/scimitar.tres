@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://yawdxpul3n4"]
+
+[ext_resource type="Texture2D" uid="uid://c0bnnsxryd0r2" path="res://addons/16x16 RPG Item Pack/Item__03.png" id="1_crdej"]
+[ext_resource type="Script" path="res://scripts/Global/GUI/Inventory/item_data.gd" id="2_0kwn4"]
+
+[resource]
+script = ExtResource("2_0kwn4")
+type = 0
+item_name = "Scimitar"
+item_dmg = 5
+item_def = 0
+item_stackable = false
+count = 0
+item_texture = ExtResource("1_crdej")
+desc = ""
